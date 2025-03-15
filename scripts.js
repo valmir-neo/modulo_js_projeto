@@ -16,7 +16,7 @@ function convertvalues() {          // - 4. Criar a Função que será chamada a
     
     // const convertedValue = inputCurrencyValue / dolarToday  - 9. criar uma função para pegar o valor obtido no input e dividir pela função da cotação. 
                                                             // - 10. Passo: conferir p ver se está funcionando --- console.log(convertedValue)          
-
+//<SECTION><DIV1>
     const currencyValueToConvert = document.querySelector(".currency-value-to-convert") // - 11. Mapear(criar variável) o paragrafo"<p>" que irá receber o 
                                                                                         // valor que o usuário colocará no input: Primeiro criar uma "class" p ele no HTML.
     const currencyValueConverted = document.querySelector(".currency-value-converted") // - 12. Mapear(criar variável) o paragrafo"<p>" que irá receber o 
@@ -30,7 +30,7 @@ function convertvalues() {          // - 4. Criar a Função que será chamada a
     //const currencySelect = document.querySelector(".currency-select")    - 14. Mapear o "<select>" que está recebendo as opções de moedas a 
                                                                           // serem convertidas, primeiramente criando uma "class" p ele no HTML, e depois 
                                                                             // criando uma variável no JS. <<<TEM Q ESTAR FORA DA FUNÇÃO>>>
-
+// - MODIFICANDO O TEXTO DA LABEL(VALOR)DE CADA MOEDA(TEXTO NUMERAL)
     if (currencySelect.value == "dolar") {                               // - 15. Criar a Função "If", junto com a variável a qual ela está se referindo, 
         currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {  // nesse caso, "(currencySelect.value)" que está indicando o valor da variável criada
             style: "currency",                                                  //anteriormente para mapear a moeda selecionada no "<select>" a ser convertida.
@@ -61,7 +61,12 @@ function convertvalues() {          // - 4. Criar a Função que será chamada a
 
 }
 
-const currencySelect = document.querySelector(".currency-select")
+// - FUNÇÃO P/ MODIFICAR O NOME E A IMAGEM DE CADA MOEDA, QUANDO O 
+//SELECT É MODIFICADO(CHANGE)
+
+
+//obs: segunda <Label>, segundo <select>
+const currencySelect  = document.querySelector(".currency-select") 
 
 currencySelect.addEventListener("change", changeCurrency )     // - 18.Pegar a variável criada quando o usuário seleciona no "<select>" uma moeda a ser convertida,
                                                                 // adicionar um Atributo "ouvinte"(addEvent...) para o evento "change" do "select", junto com a
