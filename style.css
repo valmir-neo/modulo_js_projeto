@@ -40,8 +40,7 @@ input {
     border-radius: 4px;
     border: 1px solid #BBBBBB;
     height: 48px;
-    width: 100%; 
-/* Ocupa toda a largura do elemento pai, obedecendo as definições 
+    width: 100%; /* Ocupa toda a largura do elemento pai, obedecendo as definições 
 de margin e padding */
     margin-bottom: 24px;
     padding-left: 18px;

@@ -17,19 +17,24 @@
     <main>
         <label>
             Converter <b>de:</b>
-            <select>
-                <option>R$ Real Brasileiro</option>
+            <select class="currency-select1">
+                <option value="real1">R$ Real Brasileiro</option>
+                <option value="dolar1">US$ Dolar Americano</option>
+                <option value="euro1">€ Euro</option>
+                <option value="libra1">£ Libra</option>
+                <option value="bitcoin1">₿ Bitcoin</option>
             </select>
 
         </label>
 
         <label>
             Converter <b>para:</b>
-            <select class="currency-select">
-                <option value="dolar">US$ Dolar Americano</option>
-                <option value="euro">€ Euro</option>
-                <option value="libra">£ Libra</option>
-                <option value="bitcoin">₿ Bitcoin</option>
+            <select class="currency-select2">
+                <option value="real2">R$ Real Brasileiro</option>
+                <option value="dolar2">US$ Dolar Americano</option>
+                <option value="euro2">€ Euro</option>
+                <option value="libra2">£ Libra</option>
+                <option value="bitcoin2">₿ Bitcoin</option>
             </select>
 
         </label>
@@ -44,8 +49,8 @@
 
         <section>
             <div class="currency-box">
-                <img src="./assets/real.png" alt="logo-moeda-a-converter">
-                <p class="currency">Real</p>
+                <img class="currency-img1" src="./assets/real.png" alt="logo-moeda-a-converter">
+                <p class="currency1" id="currency-name1">Real</p>
                 <p class="currency-value-to-convert">R$ 0,00</p> 
                 <!--Será o valor inserido no Input-->
             </div>  
@@ -54,8 +59,8 @@
             </div>
 
             <div class="currency-box">
-                <img class = "currency-img" src="./assets/dolar.png" alt="moeda-convertida">
-                <p class="currency" id="currency-name">Dolar Americano</p>
+                <img class = "currency-img2" src="./assets/dolar.png" alt="moeda-convertida">
+                <p class="currency2" id="currency-name2">Dolar Americano</p>
                 <p class="currency-value-converted">US$ 0,00</p>
                 <!--Será o resultado da conversão-->
             </div>
