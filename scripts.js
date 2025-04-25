@@ -85,3 +85,124 @@ function changeCurrency2 () {
         currencyValueConverted.innerHTML = "R$ 0,00"
     }
 }
+
+
+/*CODIGO P/ CONVERTER AS MOEDAS*/ 
+
+const convertButton = document.querySelector(".convert-button")
+
+convertButton.addEventListener("click", convertCurrency)
+
+function convertCurrency() {
+    const inputCurrencyValue = document.querySelector(".input-currency").value
+    const currencyValueConverted = document.querySelector(".currency-value-converted")
+
+    if (currencySelect1.value == "dolar1" && currencySelect2.value == "euro2") {
+        currencyValueToConvert.innerHTML = " US$" + inputCurrencyValue
+        currencyValueConverted.innerHTML = (inputCurrencyValue * 0.93).toFixed(2) + "€"
+    }
+
+    if (currencySelect1.value == "dolar1" && currencySelect2.value == "libra2") {
+        currencyValueToConvert.innerHTML = " US$" + inputCurrencyValue
+        currencyValueConverted.innerHTML = "£ " + (inputCurrencyValue * 0.78).toFixed(2)
+    }
+
+    if (currencySelect1.value == "dolar1" && currencySelect2.value == "bitcoin2") {
+        currencyValueToConvert.innerHTML = " US$" + inputCurrencyValue
+        currencyValueConverted.innerHTML = "₿ " + (inputCurrencyValue * 0.000045).toFixed(8)
+    }
+
+    if (currencySelect1.value == "dolar1" && currencySelect2.value == "real2") {
+        currencyValueToConvert.innerHTML = " US$" + inputCurrencyValue
+        currencyValueConverted.innerHTML = "R$ " + (inputCurrencyValue * 5.25).toFixed(2)
+    }
+
+
+
+    if (currencySelect1.value == "euro1" && currencySelect2.value == "dolar2") {
+        currencyValueToConvert.innerHTML = inputCurrencyValue + "€"
+        currencyValueConverted.innerHTML = "US$ " + (inputCurrencyValue * 1.08).toFixed(2)
+    }
+
+    if (currencySelect1.value == "euro1" && currencySelect2.value == "libra2") {
+        currencyValueToConvert.innerHTML = inputCurrencyValue + "€"
+        currencyValueConverted.innerHTML = "£" + (inputCurrencyValue * 0.84).toFixed(2)
+    }
+    
+    if (currencySelect1.value == "euro1" && currencySelect2.value == "real2") {
+        currencyValueToConvert.innerHTML = inputCurrencyValue + "€"
+        currencyValueConverted.innerHTML = "R$" + (inputCurrencyValue * 6.46).toFixed(2)
+    }
+
+    if (currencySelect1.value == "euro1" && currencySelect2.value == "bitcoin2") {
+        currencyValueToConvert.innerHTML = inputCurrencyValue + "€"
+        currencyValueConverted.innerHTML = "₿" + (inputCurrencyValue * 0.000085).toFixed(2)
+    }
+
+
+
+    if (currencySelect1.value == "libra1" && currencySelect2.value == "dolar2") {
+        currencyValueToConvert.innerHTML = "£" + inputCurrencyValue
+        currencyValueConverted.innerHTML = "US$ " + (inputCurrencyValue * 0.75).toFixed(2)
+    }
+
+    if (currencySelect1.value == "libra1" && currencySelect2.value == "euro2") {
+        currencyValueToConvert.innerHTML = "£" + inputCurrencyValue
+        currencyValueConverted.innerHTML = (inputCurrencyValue * 0.85).toFixed(2) + "€"
+    }
+    
+    if (currencySelect1.value == "libra1" && currencySelect2.value == "bitcoin2") {
+        currencyValueToConvert.innerHTML = "£" + inputCurrencyValue
+        currencyValueConverted.innerHTML = "₿" + (inputCurrencyValue * 0.0001).toFixed(2)
+    }
+
+    if (currencySelect1.value == "libra1" && currencySelect2.value == "real2") {
+        currencyValueToConvert.innerHTML = "£" + inputCurrencyValue
+        currencyValueConverted.innerHTML = "R$" + (inputCurrencyValue * 7.5).toFixed(2)
+    }
+
+
+
+    if (currencySelect1.value == "bitcoin1" && currencySelect2.value == "dolar2") {
+        currencyValueToConvert.innerHTML = "₿" + inputCurrencyValue
+        currencyValueConverted.innerHTML = "US$" + (inputCurrencyValue * 93620).toFixed(2)
+    }
+
+    if (currencySelect1.value == "bitcoin1" && currencySelect2.value == "euro2") {
+        currencyValueToConvert.innerHTML = "₿" + inputCurrencyValue
+        currencyValueConverted.innerHTML = (inputCurrencyValue * 82476).toFixed(2) + "€"
+    }
+
+    if (currencySelect1.value == "bitcoin1" && currencySelect2.value == "libra2") {
+        currencyValueToConvert.innerHTML = "₿" + inputCurrencyValue
+        currencyValueConverted.innerHTML = "£" + (inputCurrencyValue * 70432).toFixed(2)
+    }
+    
+    if (currencySelect1.value == "bitcoin1" && currencySelect2.value == "real2") {
+        currencyValueToConvert.innerHTML = "₿" + inputCurrencyValue
+        currencyValueConverted.innerHTML = "R$" + (inputCurrencyValue * 532701).toFixed(2)
+    }
+
+
+
+    if (currencySelect1.value == "real1" && currencySelect2.value == "dolar2") {
+        currencyValueToConvert.innerHTML = "R$" + inputCurrencyValue
+        currencyValueConverted.innerHTML = "US$" + (inputCurrencyValue * 0.18).toFixed(2)
+    }
+
+    if (currencySelect1.value == "real1" && currencySelect2.value == "euro2") {
+        currencyValueToConvert.innerHTML = "R$" + inputCurrencyValue
+        currencyValueConverted.innerHTML = (inputCurrencyValue * 0.15).toFixed(2) + "€"
+    }
+
+    if (currencySelect1.value == "real1" && currencySelect2.value == "libra2") {
+        currencyValueToConvert.innerHTML = "R$" + inputCurrencyValue
+        currencyValueConverted.innerHTML = "£" + (inputCurrencyValue * 0.13).toFixed(2)
+    }
+
+    if (currencySelect1.value == "real1" && currencySelect2.value == "bitcoin2") {
+        currencyValueToConvert.innerHTML = "R$" + inputCurrencyValue
+        currencyValueConverted.innerHTML = "₿" + (inputCurrencyValue * 0.0000019).toFixed(2)
+    }
+
+}
